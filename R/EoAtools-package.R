@@ -1,0 +1,1 @@
+#' @ImportFrom eoa getData posteriorLpdf posteriorLpdf.ab
