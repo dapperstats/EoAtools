@@ -14,6 +14,12 @@
 #'   Run this function after conducting a single year analysis.
 #' @return \code{list} of posteriors of lambda.
 #'
+#' @name EoApostL
+#'
+NULL
+
+#' @rdname EoApostL
+#'
 #' @export
 #'
 EoApostL <- function(){
@@ -44,4 +50,16 @@ EoApostL <- function(){
        postLpdf = posteriorLpdf.ab(X, Bab[[1]], Bab[[2]]))
 
 
+}
+
+#' @rdname EoApostL
+#'
+#' @export
+#'
+EoApostL_parameters <- function(X = NULL, Ba = NULL, Bb = NULL){
+    postLs_my <- list()
+    for(i in 1:NROW(multi_year_inputs)){
+      postLs_my[[i]] <- posteriorL.ab(X[i], Ba[i], Bb[i])    
+    }
+  postLs_my
 }

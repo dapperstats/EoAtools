@@ -2,9 +2,12 @@
 % Please edit documentation in R/EoApostL.R
 \name{EoApostL}
 \alias{EoApostL}
+\alias{EoApostL_parameters}
 \title{Process EoA Lambda Posteriors}
 \usage{
 EoApostL()
+
+EoApostL_parameters(X = NULL, Ba = NULL, Bb = NULL)
 }
 \value{
 \code{list} of posteriors of lambda.
