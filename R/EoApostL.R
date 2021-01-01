@@ -11,7 +11,14 @@
 #' @title Process EoA Lambda Posteriors
 #' @description Collect and process Lambda posteriors from EoA.
 #'   \cr
-#'   Run this function after conducting a single year analysis.
+#'   \code{EoApostL} is for running after conducting a single year analysis 
+#'   and grabs the resulting output in the active R session.
+#'   \cr
+#'   \code{EoApostL_parameters} is for working with already fitted parameters
+#'   from potentially multiple models.
+#'
+#'
+#'
 #' @return \code{list} of posteriors of lambda.
 #'
 #' @name EoApostL
@@ -58,7 +65,7 @@ EoApostL <- function(){
 #'
 EoApostL_parameters <- function(X = NULL, Ba = NULL, Bb = NULL){
     postLs_my <- list()
-    for(i in 1:NROW(multi_year_inputs)){
+    for(i in 1:length(X)){
       postLs_my[[i]] <- posteriorL.ab(X[i], Ba[i], Bb[i])    
     }
   postLs_my

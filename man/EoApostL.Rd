@@ -15,5 +15,9 @@ EoApostL_parameters(X = NULL, Ba = NULL, Bb = NULL)
 \description{
 Collect and process Lambda posteriors from EoA.
   \cr
-  Run this function after conducting a single year analysis.
+  \code{EoApostL} is for running after conducting a single year analysis 
+  and grabs the resulting output in the active R session.
+  \cr
+  \code{EoApostL_parameters} is for working with already fitted parameters
+  from potentially multiple models.
 }
