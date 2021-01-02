@@ -63,10 +63,13 @@ EoApostL <- function(){
 #'
 #' @export
 #'
-EoApostL_parameters <- function(X = NULL, Ba = NULL, Bb = NULL){
+EoApostL_parameters <- function(X = NULL, Ba = NULL, Bb = NULL, ids){
     postLs_my <- list()
     for(i in 1:length(X)){
       postLs_my[[i]] <- posteriorL.ab(X[i], Ba[i], Bb[i])    
     }
+  if(!missing(ids)){
+    names(postLs_my) <- ids
+  }
   postLs_my
 }

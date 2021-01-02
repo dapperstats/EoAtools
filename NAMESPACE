@@ -3,3 +3,4 @@
 export(EoApostL)
 export(EoApostL_parameters)
 export(EoApostM)
+export(overlap)

@@ -7,7 +7,7 @@
 \usage{
 EoApostL()
 
-EoApostL_parameters(X = NULL, Ba = NULL, Bb = NULL)
+EoApostL_parameters(X = NULL, Ba = NULL, Bb = NULL, ids)
 }
 \value{
 \code{list} of posteriors of lambda.
