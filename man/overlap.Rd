@@ -14,13 +14,14 @@ differentiated}
 
 \item{digits}{rounding digits}
 
-\item{...}{additional arguments to pass to \code{\link[pracma]{numdiff}}}
+\item{...}{additional arguments to pass to \code{numdiff} 
+(\code{\link[pracma]{numderiv}})}
 }
 \value{
 \code{matrix} of pairwise overlap values
 }
 \description{
 Measures overlap between pairs of CDFs. First uses
- \code{\link[pracma]{numdiff}} to differentiated the CDFs, then calculates
- the classic Overlap Coefficient.
+ \code{numdiff} (\code{\link[pracma]{numderiv}}) to differentiate the CDFs,
+  then calculates the classic Overlap Coefficient.
 }

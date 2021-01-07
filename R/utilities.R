@@ -4,8 +4,8 @@
 #' @title Measure overlap between pairs of CDFs
 #'
 #' @description Measures overlap between pairs of CDFs. First uses
-#'  \code{\link[pracma]{numdiff}} to differentiated the CDFs, then calculates
-#'  the classic Overlap Coefficient. 
+#'  \code{numdiff} (\code{\link[pracma]{numderiv}}) to differentiate the CDFs,
+#'   then calculates the classic Overlap Coefficient. 
 #'
 #' @param Fs \code{list} of CDFs 
 #'
@@ -14,7 +14,8 @@
 #'
 #' @param digits rounding digits
 #'
-#' @param ... additional arguments to pass to \code{\link[pracma]{numdiff}}
+#' @param ... additional arguments to pass to \code{numdiff} 
+#'  (\code{\link[pracma]{numderiv}})
 #' 
 #' @return \code{matrix} of pairwise overlap values
 #'
