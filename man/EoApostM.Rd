@@ -2,20 +2,22 @@
 % Please edit documentation in R/EoApostM.R
 \name{EoApostM}
 \alias{EoApostM}
-\title{@title Posterior of M
- @description Collect and process the posterior M from EoA.}
+\title{Posterior of M}
 \usage{
 EoApostM(posterior = "FSFY", PCIp = c(0.025, 0.975), digits = c(5, 2), ...)
+}
+\arguments{
+\item{posterior}{Which of the three posteriors}
+
+\item{PCIp}{posterior credibility interval of interest}
+
+\item{digits}{decimal places to leave}
+
+\item{...}{...}
 }
 \value{
 \code{list} of EmpiricalPosterior and SummaryStats
 }
 \description{
-@param posterior Which of the three posteriors: 
-   FSFY = full site full year, 
-   FSMP = full site monitored period, 
-   SAMP = searched area monitored period)
- @param PCIp posterior credibility interval of interest
- @param digits decimal places to leave (1: in raw posterior, 
-   2: in summary stats)
+Collect and process the posterior M from EoA.
 }

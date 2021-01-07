@@ -9,6 +9,15 @@ EoApostL()
 
 EoApostL_parameters(X = NULL, Ba = NULL, Bb = NULL, ids)
 }
+\arguments{
+\item{X}{X}
+
+\item{Ba}{Ba}
+
+\item{Bb}{Bb}
+
+\item{ids}{ids}
+}
 \value{
 \code{list} of posteriors of lambda.
 }

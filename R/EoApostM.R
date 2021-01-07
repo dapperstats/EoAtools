@@ -1,14 +1,10 @@
-#'  @title Posterior of M
-#'  @description Collect and process the posterior M from EoA.
+#' @title Posterior of M
+#' @description Collect and process the posterior M from EoA.
 #'
-#'  @param posterior Which of the three posteriors: 
-#'    FSFY = full site full year, 
-#'    FSMP = full site monitored period, 
-#'    SAMP = searched area monitored period)
-#'  @param PCIp posterior credibility interval of interest
-#'  @param digits decimal places to leave (1: in raw posterior, 
-#'    2: in summary stats)
-#'
+#' @param posterior Which of the three posteriors
+#' @param PCIp posterior credibility interval of interest
+#' @param digits decimal places to leave
+#' @param ... ...
 #' @return \code{list} of EmpiricalPosterior and SummaryStats
 #'
 #' @export

@@ -16,7 +16,10 @@
 #'   \cr
 #'   \code{EoApostL_parameters} is for working with already fitted parameters
 #'   from potentially multiple models.
-#'
+#' @param X X
+#' @param Ba Ba
+#' @param Bb Bb
+#' @param ids ids
 #'
 #'
 #' @return \code{list} of posteriors of lambda.
