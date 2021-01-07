@@ -1,3 +1,9 @@
+#    FSFY = full site full year, 
+#    FSMP = full site monitored period, 
+#    SAMP = searched area monitored period
+#   (1: in raw posterior, 
+#    2: in summary stats)
+
 #' @title Posterior of M
 #' @description Collect and process the posterior M from EoA.
 #'
